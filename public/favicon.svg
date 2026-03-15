@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SafeMeds icon">
+  <rect width="64" height="64" rx="14" fill="#0f766e"/>
+  <path d="M32 12l16 6v11c0 10.5-6.2 20-16 24-9.8-4-16-13.5-16-24V18l16-6z" fill="#ffffff"/>
+  <path d="M24 33h16" stroke="#0f766e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 25v16" stroke="#0f766e" stroke-width="4" stroke-linecap="round"/>
+</svg>
