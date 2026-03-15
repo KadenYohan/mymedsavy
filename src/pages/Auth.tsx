@@ -12,6 +12,7 @@ export default function Auth() {
   const appUrl = import.meta.env.PROD
     ? 'https://kadenyohan.github.io/mymedsavy'
     : window.location.origin;
+  const emailVerifiedUrl = `${appUrl}/verified.html`;
 
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
@@ -35,7 +36,7 @@ export default function Auth() {
           password,
           options: {
             data: { full_name: fullName },
-            emailRedirectTo: appUrl,
+            emailRedirectTo: emailVerifiedUrl,
           },
         });
         if (error) throw error;
