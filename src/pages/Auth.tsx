@@ -9,6 +9,11 @@ import { toast } from '@/hooks/use-toast';
 import { ShieldCheck, Mail, Lock, User } from 'lucide-react';
 
 export default function Auth() {
+  const appUrl = import.meta.env.PROD
+    ? 'https://kadenyohan.github.io/mymedsavy'
+    : window.location.origin;
+  const emailVerifiedUrl = `${appUrl}/verified.html`;
+
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -31,7 +36,7 @@ export default function Auth() {
           password,
           options: {
             data: { full_name: fullName },
-            emailRedirectTo: window.location.origin,
+            emailRedirectTo: emailVerifiedUrl,
           },
         });
         if (error) throw error;
