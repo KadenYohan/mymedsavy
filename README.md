@@ -40,6 +40,13 @@ Run test suite:
 npm run test
 ```
 
+## Test account
+
+Use these credentials for app testing:
+
+- Email: als.jn05@gmail.com
+- Password: 654321
+
 ## Deployment
 
 This repository deploys to GitHub Pages using the workflow in `.github/workflows/jekyll-gh-pages.yml`.
