@@ -1,0 +1,7 @@
+project_id = "mtnqzweevqgnycpjvhhz"
+
+[functions.drug-info]
+verify_jwt = false
+
+[functions.check-interactions]
+verify_jwt = false
